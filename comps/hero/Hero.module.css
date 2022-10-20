@@ -1,0 +1,26 @@
+.container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title, .title span {
+    font-family: "OrbitronMedium";
+    text-transform: uppercase;
+    /* font-size: 9rem; */
+    color: var(--dark1);
+    line-height: 95%;
+}
+
+.title span {
+    margin-left: 2.2ch;
+}
+
+.copy {
+    width: 60%;
+    margin-top: 3rem;
+}

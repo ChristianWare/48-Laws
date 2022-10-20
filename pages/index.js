@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Hero from '../comps/hero/Hero'
 
 import styles from '../styles/Home.module.css'
 
@@ -11,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>48 LAWS OF POWER</h1>
+      <Hero />
     </div>
   )
 }
