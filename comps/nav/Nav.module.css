@@ -1,9 +1,18 @@
 .navbar {
-    display: flex;
-    gap: 3rem;
-    list-style: none;  
-    flex-wrap: wrap;
     padding: 1rem 0rem;
+}
+
+.navmenu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3rem;
+    list-style: none;
+    transition: none;
+}
+
+.navItem {
+    font-size: 1.8rem;
 }
 
 .hamburger {
@@ -20,15 +29,12 @@
     background-color: var(--dark1);
 }
 
-.navmenu {
-    display: flex;
-    gap: 3rem;
-    list-style: none;
-    transition: none;
-    white-space: nowrap;
-}
-
-@media only screen and (max-width: 868px) {
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
     .navmenu {
         position: fixed;
         left: -100%;
@@ -96,4 +102,8 @@
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+@media screen and (max-width: 855px) {
+    
 }

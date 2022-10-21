@@ -1,23 +1,64 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "./Nav.module.css";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
+  const router = useRouter();
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (window.innerWidth <= 768 && isOpen) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "auto";
+    }
+    const handleResize = () => setIsOpen(false);
+    window.addEventListener("resize", handleResize);
+  }, [isOpen]);
 
   return (
-    <header className={styles.header}>
+    <header>
       <nav className={styles.navbar}>
-        <Link href='/'>
-          <a>Home</a>
-        </Link>
-        <Link href='/'>
-          <a>About</a>
-        </Link>
-        <Link href='/'>
-          <a>Blog</a>
-        </Link>
+        <ul
+          onClick={openMenu}
+          className={
+            isOpen === false
+              ? styles.navmenu
+              : styles.navmenu + " " + styles.active
+          }
+        >
+          <li className={styles.navItem}>
+            <Link href='/'>
+              <a title='Home Page'>Home</a>
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href='/about'>
+              <a title='About Page'>About</a>
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href='/laws'>
+              <a title='Laws Page'>Laws</a>
+            </Link>
+          </li>
+        </ul>
+
+        <span
+          onClick={openMenu}
+          className={
+            isOpen === false
+              ? styles.hamburger
+              : styles.hamburger + " " + styles.active
+          }
+        >
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+        </span>
       </nav>
     </header>
   );
