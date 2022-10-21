@@ -2,15 +2,8 @@
     margin-bottom: 5rem;
 }
 
-.content {
-    display: flex;
-    gap: 2rem;
-    padding: 3rem;
-    margin-top: 3rem;
-}
-
-.left, .right{
- flex: 1;
+.top {
+    margin-bottom: 3rem;
 }
 
 .title {
@@ -30,10 +23,58 @@
     margin-left: 2.2ch;
 }
 
+.bottom {
+    display: flex;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.left, .right{
+ flex: 1;
+}
+
 .imgContainer {
     height: 100%;
 }
 
 .img {
     border-radius: 8px;
+}
+
+
+@media screen and (max-width: 855px) {
+    .title span {
+        margin-left: 0ch;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        margin-bottom: 1rem;
+    }
+    
+    .bottom {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .bottom {
+        padding: 2rem;
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .bottom {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 6rem;
+    }
 }
