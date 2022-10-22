@@ -1,0 +1,20 @@
+.law {
+    background-color: var(--light1);
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.law p {
+    font-family: "OrbitronRegular";
+    font-size: 2rem;
+    color: var(--dark2);
+}
+
+.law p:nth-child(2) {
+    font-size: 2rem;
+}

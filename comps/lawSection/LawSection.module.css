@@ -1,0 +1,28 @@
+.container {
+    padding: 3rem;
+    margin-bottom: 5rem;
+}
+
+.top {
+    margin-bottom: 5rem;
+}
+
+.title {
+    font-family: "OrbitronRegular";
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--dark1);
+    line-height: 95%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
