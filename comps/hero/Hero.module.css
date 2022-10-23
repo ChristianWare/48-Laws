@@ -1,6 +1,6 @@
 .container {
-    margin-bottom: 5rem;
-    height: 100vh;
+    margin-bottom: 10rem;
+    /* height: 100vh; */
 }
 
 .top {
@@ -38,10 +38,6 @@
 
 .left, .right{
  flex: 1;
-}
-
-.imgContainer {
-    height: 100%;
 }
 
 .img {

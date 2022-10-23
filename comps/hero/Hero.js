@@ -27,14 +27,12 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.right}>
-          <div className={styles.imgContainer}>
             <Image
               src={img}
               className={styles.img}
               layout='responsive'
               objectFit='cover'
             />
-          </div>
         </div>
       </div>
     </div>

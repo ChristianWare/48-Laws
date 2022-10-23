@@ -31,6 +31,27 @@
         justify-content: flex-end;
     }
     
+    .title {
+        font-size: 7rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        border-bottom: 1px solid var(--dark1);
+}
+
+.title, .title span {
+        font-family: "OrbitronExtraBold";
+        text-transform: uppercase;
+        color: var(--dark1);
+        line-height: 95%;
+}
+
+.title span {
+        /* margin-left: 2.2ch; */
+        color: var(--neon);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: var(--dark1);
+}
+
     .navmenu {
         position: fixed;
         left: -100%;
@@ -44,7 +65,8 @@
         transition: 0.3s;
         border: 5px solid var(--accent2);
         color: var(--accent4);
-        backdrop-filter: blur(15px);
+        background-color: var(--neon);
+        z-index: 998;
     }
 
     .navItem a:hover::before {

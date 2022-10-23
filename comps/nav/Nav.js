@@ -30,6 +30,15 @@ const Nav = () => {
               : styles.navmenu + " " + styles.active
           }
         >
+          {isOpen && (
+            <>
+              <h1 className={styles.title}>
+                48 Laws
+                <br />
+                <span>of Power</span>
+              </h1>
+            </>
+          )}
           <li className={styles.navItem}>
             <Link href='/'>
               <a title='Home Page'>Home</a>
@@ -46,7 +55,6 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
-
         <span
           onClick={openMenu}
           className={
