@@ -1,0 +1,15 @@
+.svg {
+    font-family: "OrbitronExtraBold";
+    text-transform: uppercase;
+    fill: var(--dark1);
+    animation: rotation 5s linear infinite;
+}
+
+@keyframes animate {
+    from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

@@ -23,9 +23,9 @@ const LawSection = ({ laws }) => {
           ))}
         </div>
       </div>
-      {/* <div className={styles.btnContainer}>
-        <Button text='See All Laws' />
-      </div> */}
+      <div className={styles.btnContainer}>
+        <Button href='/' text='See All Laws' color='secondary' />
+      </div>
     </section>
   );
 };

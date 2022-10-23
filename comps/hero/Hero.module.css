@@ -1,6 +1,5 @@
 .container {
     margin-bottom: 10rem;
-    /* height: 100vh; */
 }
 
 .top {
@@ -64,6 +63,12 @@
     .bottom {
         flex-direction: column;
     }
+
+    .btnContainer {
+        display: grid;
+        width: 100%;
+        grid-auto-flow: column;
+    }
 }
 
 @media screen and (max-width: 655px) {
@@ -93,6 +98,6 @@
 
 @media screen and (max-width: 480px) {
     .btnContainer {
-        flex-direction: column;
+        grid-auto-flow: row;
     }
 }
