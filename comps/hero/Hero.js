@@ -1,6 +1,7 @@
 import styles from "./Hero.module.css";
 import Image from "next/image";
 import img from "../../public/images/law30.jpg";
+import Button from "../button/Button";
 
 const Hero = () => {
   return (
@@ -20,6 +21,10 @@ const Hero = () => {
             practice, as well as examples of those who do not respect these
             laws.
           </p>
+          <div className={styles.btnContainer}>
+            <Button href='/' text='About' title='about' />
+            <Button href='/' color='secondary' text='All Laws' title='about' />
+          </div>
         </div>
         <div className={styles.right}>
           <div className={styles.imgContainer}>

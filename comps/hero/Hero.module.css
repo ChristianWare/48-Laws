@@ -1,21 +1,25 @@
 .container {
-    margin-top: 3rem;
     margin-bottom: 5rem;
     height: 100vh;
 }
 
 .top {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    padding: 3rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
 }
 
 .title {
+    border-bottom: 1px solid var(--dark1);
     padding-left: 3rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-size: 9rem;
 }
 
 .title, .title span {
-    font-family: "OrbitronMedium";
+    font-family: "OrbitronExtraBold";
     text-transform: uppercase;
     color: var(--dark1);
     line-height: 95%;
@@ -23,6 +27,9 @@
 
 .title span {
     margin-left: 2.2ch;
+    color: var(--neon);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--dark1);
 }
 
 .bottom {
@@ -43,6 +50,11 @@
     border-radius: 5px;
 }
 
+.btnContainer {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
 
 @media screen and (max-width: 855px) {
     .title span {

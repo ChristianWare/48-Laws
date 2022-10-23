@@ -6,16 +6,26 @@ const LawSection = ({ laws }) => {
   return (
     <section className={styles.container}>
       <div className={styles.top}>
-        <h2 className={styles.title}>Top Laws of Power</h2>
+        <h2 className={styles.title}>
+          Top Laws <br />
+          <span>of Power</span>
+        </h2>
       </div>
       <div className={styles.content}>
-        {laws.map((law, index) => (
-          <Law laws={law} index={index} />
-        ))}
+        <div className={styles.content1}>
+          {laws.slice(0, 3).map((law, index) => (
+            <Law laws={law} index={index} />
+          ))}
+        </div>
+        <div className={styles.content2}>
+          {laws.slice(4, 7).map((law, index) => (
+            <Law laws={law} index={index} />
+          ))}
+        </div>
       </div>
-      <div className={styles.btnContainer}>
+      {/* <div className={styles.btnContainer}>
         <Button text='See All Laws' />
-      </div>
+      </div> */}
     </section>
   );
 };

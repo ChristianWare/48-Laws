@@ -11,10 +11,6 @@
     transition: none;
 }
 
-.navItem {
-    font-size: 1.8rem;
-}
-
 .hamburger {
     display: none;
 }

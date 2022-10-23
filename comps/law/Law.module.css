@@ -2,19 +2,48 @@
     background-color: var(--light1);
     padding: 2.5rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
+    border: 2px solid var(--light1);
     border-radius: 3px;
     width: 100%;
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 
-.law p {
-    font-family: "OrbitronRegular";
+.container .active {
+   background-color: var(--neon); 
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.number, .title{
+    font-family: "OrbitronMedium";
     font-size: 2rem;
     color: var(--dark2);
 }
 
-.law p:nth-child(2) {
-    font-size: 2rem;
+.openClose {
+    font-family: "OrbitronRegular";
+    font-size: 3rem;
+}
+
+.title {
+    font-family: "OrbitronExtraBold";
+    text-transform: uppercase;
+}
+
+.top p, .title {
+    margin-bottom: 1rem;
+}
+
+.description  {
+    font-family: "SpaceGrotesk";
+    color: var(--dark2)
 }

@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    display: block;
+    font-family: "SpaceGroteskBold";
+    text-align: center;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.primary {
+    background-color: var(--dark1);
+    color: var(--neon);
+    border: 2px solid var(--dark1);
+}
+
+.secondary {
+    background-color: var(--neon);
+    color: var(--dark1);
+    border: 2px solid var(--dark1);
+}
