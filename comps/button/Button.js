@@ -9,10 +9,11 @@ const Button = ({
 }) => {
   return (
     <Link href={href}>
-      <a className={styles.container} title={title}>
-        <button className={`${styles.btn} ${styles[color]}`}>
-          {text}
-        </button>
+      <a
+        className={`${styles.btn} ${styles[color]}`}
+        title={title}
+      >
+        {text}
       </a>
     </Link>
   );
