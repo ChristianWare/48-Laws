@@ -31,6 +31,10 @@
         justify-content: flex-end;
     }
     
+    .titleHidden {
+        display: hidden;
+    }
+    
     .title {
         font-size: 7rem;
         padding-bottom: 2rem;
@@ -38,19 +42,18 @@
         border-bottom: 1px solid var(--dark1);
 }
 
-.title, .title span {
+    .title, .title span {
         font-family: "OrbitronExtraBold";
         text-transform: uppercase;
         color: var(--dark1);
         line-height: 95%;
-}
+    }
 
-.title span {
-        /* margin-left: 2.2ch; */
+    .title span {
         color: var(--neon);
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: var(--dark1);
-}
+    }
 
     .navmenu {
         position: fixed;

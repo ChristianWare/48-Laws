@@ -30,7 +30,7 @@ const Nav = () => {
               : styles.navmenu + " " + styles.active
           }
         >
-          {isOpen && (
+          {isOpen === true && window.innerWidth <= 768 ? (
             <>
               <h1 className={styles.title}>
                 48 Laws
@@ -38,20 +38,20 @@ const Nav = () => {
                 <span>of Power</span>
               </h1>
             </>
-          )}
+          ) : ("")}
           <li className={styles.navItem}>
             <Link href='/'>
-              <a title='Home Page'>Home</a>
+              <a onClick={openMenu} title='Home Page'>Home</a>
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link href='/about'>
-              <a title='About Page'>About</a>
+              <a onClick={openMenu} title='About Page'>About</a>
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link href='/laws'>
-              <a title='Laws Page'>Laws</a>
+              <a onClick={openMenu} title='Laws Page'>Laws</a>
             </Link>
           </li>
         </ul>
