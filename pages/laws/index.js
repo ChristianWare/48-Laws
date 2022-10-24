@@ -1,6 +1,6 @@
-import LawSection2 from "../comps/lawSection2/LawSection2";
-import SectionHeader from "../comps/sectionHeader/SectionHeader";
-import { sortByLawNumber } from '../utils'
+import LawSection2 from "../../comps/lawSection2/LawSection2";
+import SectionHeader from "../../comps/sectionHeader/SectionHeader";
+import { sortByLawNumber } from '../../utils'
   
 const laws = ({ laws }) => {
   return (
