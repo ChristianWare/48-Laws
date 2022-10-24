@@ -28,3 +28,28 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--dark1);
 }
+
+@media screen and (max-width: 855px) {
+    .title span {
+        margin-left: 0ch;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .title {
+        text-align: center;
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .title {
+        font-size: 6rem;
+    }
+}
