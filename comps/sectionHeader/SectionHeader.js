@@ -2,7 +2,7 @@ import styles from './SectionHeader.module.css'
 
 const SectionHeader = ({ text1, text2 }) => {
   return (
-    <div className={styles.container}>
+    <div>
       <div className={styles.top}>
         <h1 className={styles.title}>
           {text1}
