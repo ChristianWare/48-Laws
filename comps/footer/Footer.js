@@ -1,10 +1,9 @@
 import CircleText from "../circleText/CircleText";
-import Nav from "../nav/Nav";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={styles.container}>
+    <footer>
       <div className={styles.content}>
         <div className={styles.circleTextContainer}>
           <CircleText text='48 • LAWS • OF • POWER •' />

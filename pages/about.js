@@ -1,7 +1,9 @@
+import SectionHeader from "../comps/sectionHeader/SectionHeader"
+
 const about = () => {
   return (
     <>
-        <h1>About Page</h1>
+        <SectionHeader text1='about' text2='48 laws' />
     </>
   )
 }

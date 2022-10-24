@@ -1,7 +1,9 @@
+import SectionHeader from "../comps/sectionHeader/SectionHeader";
+
 const laws = () => {
   return (
     <>
-      <h1>Laws Page</h1>
+      <SectionHeader text1='all' text2='48 laws' />
     </>
   );
 };

@@ -1,0 +1,30 @@
+.container {
+    margin-bottom: 10rem;
+}
+
+.top {
+    margin-bottom: 1rem;
+    padding: 3rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+}
+
+.title {
+    font-size: 9rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--dark1);
+}
+
+.title, .title span {
+    font-family: "OrbitronExtraBold";
+    text-transform: uppercase;
+    color: var(--dark1);
+    line-height: 95%;
+}
+
+.title span {
+    margin-left: 2.2ch;
+    color: var(--neon);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--dark1);
+}
