@@ -1,0 +1,10 @@
+.container {
+    padding: 0rem 3rem;
+    height: 90vh;
+}
+
+.btnContainer {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+}

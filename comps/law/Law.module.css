@@ -29,11 +29,13 @@
     font-family: "OrbitronMedium";
     font-size: 2rem;
     color: var(--dark2);
+    user-select:none;
 }
 
 .openClose {
     font-family: "OrbitronRegular";
     font-size: 3rem;
+    user-select:none;
 }
 
 .title {

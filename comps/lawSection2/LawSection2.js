@@ -14,7 +14,7 @@ const LawSection2 = ({ laws }) => {
         </div>
       </div>
       <div className={styles.btnContainer}>
-        <Button href='/' text='See All Laws' color='secondary' />
+        <Button href='/' text='Pagination' color='secondary' />
       </div>
     </section>
   );

@@ -1,7 +1,6 @@
 .container {
     padding: 3rem;
     margin-bottom: 5rem;
-    
 }
 
 .content {
@@ -13,32 +12,25 @@
 
 .btnContainer {
     display: flex;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
-@media screen and (max-width: 905px) {
-    .title span {
-        margin-left: 0ch;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
     .container {
         padding: 2rem;
     }
-
-    .title, .title span {
-        font-size: 6rem;
-    }
-
     .content {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 0rem;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .btnContainer {
         display: block;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .content {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
