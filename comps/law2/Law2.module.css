@@ -1,0 +1,46 @@
+.container {
+    background-color: var(--light1);
+    padding: 2rem;
+    border: 2px solid var(--light1);
+    border-radius: 5px;
+    color: var(--dark1);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    background-color: var(--neon);
+}
+
+.container:hover, .active {
+    background-color: var(--neon); 
+    border: 2px solid var(--dark1);
+}
+
+.img {
+    border-radius: 5px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: .5rem;
+}
+
+.number, .title {
+    font-family: "OrbitronMedium";
+    font-size: 2rem;
+    text-transform: uppercase;
+    hyphens: auto;    
+}
+
+.openClose {
+    font-family: "OrbitronRegular";
+    font-size: 4rem;
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+}
+
+.title {
+   margin-bottom: 3rem; 
+}

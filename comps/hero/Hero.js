@@ -1,6 +1,6 @@
 import styles from "./Hero.module.css";
 import Image from "next/image";
-import img from "../../public/images/law30.jpg";
+import img from "../../public//images/law30.jpg";
 import Button from "../button/Button";
 
 const Hero = () => {
@@ -27,12 +27,12 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.right}>
-            <Image
-              src={img}
-              className={styles.img}
-              layout='responsive'
-              objectFit='cover'
-            />
+          <Image
+            src={img}
+            className={styles.img}
+            layout='responsive'
+            objectFit='cover'
+          />
         </div>
       </div>
     </div>

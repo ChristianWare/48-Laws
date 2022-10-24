@@ -1,39 +1,19 @@
 .container {
     padding: 3rem;
     margin-bottom: 5rem;
-}
-
-.top {
-    margin-bottom: 5rem;
-}
-
-.title {
-    font-family: "OrbitronExtraBold";
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 95%;
-    font-size: 8rem;
-    color: var(--neon);
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: var(--dark1);
-}
-
-.title span {
-    margin-left: 3.7ch;
-    text-align: right;
-    font-family: "OrbitronExtraBold";
-    color: var(--dark1);
-    line-height: 95%;
+    
 }
 
 .content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+    gap: 2rem;
 }
 
 .btnContainer {
     display: flex;
+    margin-top: 3rem;
 }
 
 @media screen and (max-width: 905px) {
@@ -65,9 +45,5 @@
 @media screen and (max-width: 480px) {
     .container {
         padding: 1rem;
-    }
-
-    .title, .title span {
-        font-size: 5.5rem;
     }
 }

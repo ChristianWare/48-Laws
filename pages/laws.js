@@ -1,9 +1,12 @@
+import LawSection2 from "../comps/lawSection2/LawSection2";
 import SectionHeader from "../comps/sectionHeader/SectionHeader";
-
+import { sortByLawNumber } from '../utils'
+  
 const laws = ({ laws }) => {
   return (
     <>
       <SectionHeader text1='all' text2='48 laws' />
+      <LawSection2 laws={laws} />
     </>
   );
 };
@@ -36,7 +39,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      laws
+      laws: laws.sort(sortByLawNumber),
     },
   };
 };

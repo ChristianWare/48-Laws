@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SectionHeader from "../comps/sectionHeader/SectionHeader";
 import styles from "../styles/about.module.css";
-import img from "../public/images/law21.jpg";
+import img from "../public//images/law21.jpg";
 
 const about = () => {
   return (
