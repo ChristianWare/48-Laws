@@ -12,3 +12,14 @@
     padding-bottom: 3rem;
     border-bottom: 1px solid var(--dark1);
 }
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem
+}
