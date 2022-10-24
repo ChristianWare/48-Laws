@@ -1,4 +1,4 @@
-.law {
+.container {
     background-color: var(--light1);
     padding: 2.5rem;
     display: flex;
@@ -6,13 +6,16 @@
     align-items: flex-start;
     justify-content: space-between;
     border-radius: 3px;
+    border: 1px solid var(--light1);
     width: 100%;
     cursor: pointer;
     margin-bottom: 1rem;
+    transition: all 0.1s ease-in;
 }
 
-.container .active {
+.container:hover, .active {
     background-color: var(--neon); 
+    border: 1px solid var(--dark1);
 }
 
 .top {

@@ -12,25 +12,23 @@ const Law = ({ laws }) => {
 
   return (
     <article
-      className={styles.container}
+      className={`${styles.container} ${showInfo ? styles.active : ""}`}
       onClick={closeHandler}
     >
-      <div className={styles.law}>
-        <div className={styles.top}>
-          <p className={styles.number}>LAW {laws.frontmatter.number}</p>
-          <p className={styles.openClose}>{!showInfo ? '+' : '-'}</p>
-        </div>
-        {showInfo && (
-          <div className={styles.bottom}>
-            <p className={styles.title}>{laws.frontmatter.title}</p>
-            <p className={styles.description}>{laws.frontmatter.description}</p>
-            <Image src={laws.frontmatter.title.thumbnailUrl} />
-            {/* <Link href='/'>
+      <div className={styles.top}>
+        <p className={styles.number}>LAW {laws.frontmatter.number}</p>
+        <p className={styles.openClose}>{!showInfo ? "+" : "-"}</p>
+      </div>
+      {showInfo && (
+        <div className={styles.bottom}>
+          <p className={styles.title}>{laws.frontmatter.title}</p>
+          <p className={styles.description}>{laws.frontmatter.description}</p>
+          <Image src={laws.frontmatter.title.thumbnailUrl} />
+          {/* <Link href='/'>
               <a>Read More</a>
             </Link> */}
-          </div>
-        )}
-      </div>
+        </div>
+      )}
     </article>
   );
 };
