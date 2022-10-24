@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Hero from "../comps/hero/Hero";
 import LawSection from "../comps/lawSection/LawSection";
+import { sortByLawNumber } from "../utils/index";
 
 export default function Home({ laws }) {
   console.log(laws);
@@ -34,17 +35,24 @@ export const getStaticProps = async () => {
     );
 
     //3. Extract the front matter from every MDX file:
-    const { data } = matter(markdownWithMeta);
+    const { data: frontmatter } = matter(markdownWithMeta);
 
     return {
-      frontmatter: data,
+      frontmatter,
       slug: filename.split(".")[0],
     };
   });
 
   return {
     props: {
-      laws: laws.slice(0, 7),
+      laws,
     },
   };
 };
+
+
+// return {
+//   props: {
+//     laws: laws.sort(sortByLawNumber),
+//   },
+// };
