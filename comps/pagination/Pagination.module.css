@@ -1,0 +1,20 @@
+.container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.container li {
+    padding: 1.5rem;
+    font-family: "OrbitronRegular";
+    font-size: 2rem;
+    color: var(--dark1);
+    background-color: var(--neon);
+    border-radius: 5px;
+    line-height: 50%;
+    border: 1px solid var(--dark1);
+    cursor: pointer;
+}

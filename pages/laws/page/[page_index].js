@@ -1,13 +1,18 @@
 import LawSection2 from "../../../comps/lawSection2/LawSection2";
 import SectionHeader from "../../../comps/sectionHeader/SectionHeader";
+import Pagination from "../../../comps/Pagination/Pagination";
 import { sortByLawNumber } from "../../../utils";
 import { POSTS_PER_PAGE } from "../../../config";
+import styles from '../../../styles/Laws.module.css'
 
 const Laws = ({ laws, numPages, currentPage }) => {
   return (
     <>
       <SectionHeader text1='all' text2='48 laws' />
       <LawSection2 laws={laws} />
+      <div className={styles.paginationContainer}>
+        <Pagination currentPage={currentPage} numPages={numPages} />
+      </div>
     </>
   );
 };
