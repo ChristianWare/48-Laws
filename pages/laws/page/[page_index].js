@@ -1,6 +1,6 @@
 import LawSection2 from "../../../comps/lawSection2/LawSection2";
 import SectionHeader from "../../../comps/sectionHeader/SectionHeader";
-import Pagination from "../../../comps/Pagination/Pagination";
+import Pagination from "../../../comps/pagination/Pagination";
 import { sortByLawNumber } from "../../../utils";
 import { POSTS_PER_PAGE } from "../../../config";
 import styles from '../../../styles/Laws.module.css'
