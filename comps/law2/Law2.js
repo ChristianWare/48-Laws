@@ -31,7 +31,7 @@ const Law2 = ({ laws }) => {
       </div>
       {showInfo && <p className={styles.title} lang='en'>{laws.frontmatter.title} . . . .</p>}
       <div className={styles.btnContainer}>
-        <Button text='Read More' color='tertiary' />
+        <Button href={`/laws/${laws.slug}`} text='Read More' color='tertiary' />
       </div>
     </article>
   );

@@ -35,5 +35,11 @@
 .tertiary {
     background-color: var(--light2);
     color: var(--dark1);
-    border: 2px solid var(--dark1)
+    border: 2px solid var(--dark1);
+}
+
+.tertiary:hover {
+    background-color: var(--dark2);
+    color: var(--light2);
+    border: 2px solid var(--dark2);
 }
