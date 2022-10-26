@@ -20,6 +20,7 @@ const slugPage = ({ serializedContent, slug }) => {
         <div className={styles.imgContainer}>
           <Image
             src={frontmatter.thumbnailUrl}
+            alt={frontmatter.title}
             layout='fill'
             objectFit='cover'
             className={styles.img}
