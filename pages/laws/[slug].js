@@ -11,7 +11,6 @@ import rehypeCodeTitles from "rehype-code-titles";
 import styles from "../../styles/SlugPage.module.css";
 
 const slugPage = ({ serializedContent, slug }) => {
-  console.log(slug)
   const { frontmatter } = serializedContent;
   return (
     <div className={styles.container}>

@@ -1,5 +1,6 @@
 .navbar {
     padding: 1rem 0rem;
+    margin-top: 1rem;
 }
 
 .navmenu {
@@ -11,8 +12,17 @@
     transition: none;
 }
 
-.navItem {
+.navItem a {
+    font-family: "OrbitronExtraBold";
     text-transform: uppercase;
+    padding: 1rem;
+    border: 1px solid var(--light2);
+}
+
+.navItem a:hover {
+    background-color: var(--neon);
+    transition: all 0.2s ease-in-out;
+    border: 1px solid var(--dark1);
 }
 
 .hamburger {

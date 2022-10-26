@@ -5,7 +5,6 @@ import LawSection from "../comps/lawSection/LawSection";
 import { sortByLawNumber } from "../utils/index";
 
 export default function Home({ laws }) {
-  console.log(laws);
   return (
     <div>
       <Head>
