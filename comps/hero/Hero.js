@@ -1,9 +1,12 @@
 import styles from "./Hero.module.css";
 import Image from "next/image";
-import img from "../../public//images/law30.jpg";
+import img from "../../public/images/law30.jpg";
 import Button from "../button/Button";
 
 const Hero = () => {
+  const img =
+    "https://res.cloudinary.com/chrisware/image/upload/v1666810349/law30_puvvwe.jpg";
+
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -23,13 +26,20 @@ const Hero = () => {
           </p>
           <div className={styles.btnContainer}>
             <Button href='/about' text='About' title='about' />
-            <Button href='/laws' color='secondary' text='All Laws' title='All Laws' />
+            <Button
+              href='/laws'
+              color='secondary'
+              text='All Laws'
+              title='All Laws'
+            />
           </div>
         </div>
         <div className={styles.right}>
           <Image
-            src={img}
+            src='https://res.cloudinary.com/chrisware/image/upload/v1666810349/law30_puvvwe.jpg'
             className={styles.img}
+            width='1920'
+            height='1280'
             layout='responsive'
             objectFit='cover'
           />
