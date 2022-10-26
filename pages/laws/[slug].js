@@ -24,14 +24,15 @@ const slugPage = ({ serializedContent, slug }) => {
             layout='fill'
             objectFit='cover'
             className={styles.img}
+            priority={true}
           />
         </div>
         <h2 className={styles.title}>{frontmatter.title}</h2>
       </div>
       <MDXRemote {...serializedContent} />
-        <button onClick={() => Router.back()} className={styles.back}>
-          <span>←</span>Back
-        </button>
+      <button onClick={() => Router.back()} className={styles.back}>
+        <span>←</span>Back
+      </button>
     </div>
   );
 };

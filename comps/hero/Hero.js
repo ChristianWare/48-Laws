@@ -42,7 +42,8 @@ const Hero = () => {
             height='1280'
             layout='responsive'
             objectFit='cover'
-          />
+            priority={true}
+            />
         </div>
       </div>
     </div>

@@ -19,6 +19,7 @@ const Law2 = ({ laws }) => {
         height={420}
         width={600}
         objectFit='cover'
+        priority={true}
         className={styles.img}
       />
       <div className={styles.top}>
@@ -29,7 +30,11 @@ const Law2 = ({ laws }) => {
           {!showInfo ? "+" : "-"}
         </p>
       </div>
-      {showInfo && <p className={styles.title} lang='en'>{laws.frontmatter.title} . . . .</p>}
+      {showInfo && (
+        <p className={styles.title} lang='en'>
+          {laws.frontmatter.title} . . . .
+        </p>
+      )}
       <div className={styles.btnContainer}>
         <Button href={`/laws/${laws.slug}`} text='Read More' color='tertiary' />
       </div>
