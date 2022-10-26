@@ -1,4 +1,6 @@
+import Link from "next/link";
 import Image from "next/image";
+import  Router  from "next/router";
 import fs from "fs";
 import path from "path";
 import { MDXRemote } from "next-mdx-remote";
@@ -8,7 +10,8 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeCodeTitles from "rehype-code-titles";
 import styles from "../../styles/SlugPage.module.css";
 
-const slugPage = ({ serializedContent }) => {
+const slugPage = ({ serializedContent, slug }) => {
+  console.log(slug)
   const { frontmatter } = serializedContent;
   return (
     <div className={styles.container}>
@@ -25,6 +28,9 @@ const slugPage = ({ serializedContent }) => {
         <h2 className={styles.title}>{frontmatter.title}</h2>
       </div>
       <MDXRemote {...serializedContent} />
+        <button onClick={() => Router.back()} className={styles.back}>
+          <span>←</span>Back
+        </button>
     </div>
   );
 };

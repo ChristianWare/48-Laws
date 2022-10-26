@@ -11,6 +11,10 @@
     transition: none;
 }
 
+.navItem {
+    text-transform: uppercase;
+}
+
 .hamburger {
     display: none;
 }
