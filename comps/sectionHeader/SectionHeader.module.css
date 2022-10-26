@@ -25,6 +25,8 @@
     -webkit-text-stroke-color: var(--dark1);
 }
 
+
+
 @media screen and (max-width: 855px) {
     .title span {
         margin-left: 0ch;

@@ -22,8 +22,8 @@ const Hero = () => {
             laws.
           </p>
           <div className={styles.btnContainer}>
-            <Button href='/' text='About' title='about' />
-            <Button href='/' color='secondary' text='All Laws' title='about' />
+            <Button href='/about' text='About' title='about' />
+            <Button href='/laws' color='secondary' text='All Laws' title='All Laws' />
           </div>
         </div>
         <div className={styles.right}>

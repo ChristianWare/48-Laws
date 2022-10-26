@@ -1,6 +1,6 @@
 import styles from './SectionHeader.module.css'
 
-const SectionHeader = ({ text1, text2 }) => {
+const SectionHeader = ({ text1, text2, }) => {
   return (
     <div>
       <div className={styles.top}>
