@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "./Law.module.css";
 
 const Law = ({ laws }) => {
@@ -23,9 +22,11 @@ const Law = ({ laws }) => {
         <div className={styles.bottom}>
           <p className={styles.title}>{laws.frontmatter.title}</p>
           <p className={styles.description}>{laws.frontmatter.description}</p>
-          {/* <Link href='/'>
-              <a>Read More</a>
-            </Link> */}
+          <Link href={`/laws/${laws.slug}`}>
+            <a className={styles.readMore}>
+              Read More <span>→</span>
+            </a>
+          </Link>
         </div>
       )}
     </article>

@@ -51,3 +51,24 @@
     font-family: "SpaceGrotesk";
     color: var(--dark2)
 }
+
+.readMore {
+    position: relative;
+    top: 10px;
+    font-size: 2rem;
+    font-family: "OrbitronExtraBold";
+    color: var(--dark2);
+    border: 1px solid var(--dark2);
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.readMore:hover {
+    background-color: var(--light1);
+}
+
+.readMore span {
+    font-size: 3rem;
+    position: relative;
+    top: 1px;
+}
