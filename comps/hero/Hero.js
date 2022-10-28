@@ -7,6 +7,8 @@ const Hero = () => {
   const img =
     "https://res.cloudinary.com/chrisware/image/upload/v1666810349/law30_puvvwe.jpg";
 
+  const random = Math.floor(Math.random() * 49);
+
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -25,12 +27,12 @@ const Hero = () => {
             laws.
           </p>
           <div className={styles.btnContainer}>
-            <Button href='/about' text='About' title='about' />
+            <Button href='/about' text='All Laws' title='All Laws' />
             <Button
-              href='/laws'
+              href={`/laws/law${random}`}
               color='secondary'
-              text='All Laws'
-              title='All Laws'
+              text='Random Law'
+              title='Random Law'
             />
           </div>
         </div>
@@ -43,7 +45,7 @@ const Hero = () => {
             layout='responsive'
             objectFit='cover'
             priority={true}
-            />
+          />
         </div>
       </div>
     </div>

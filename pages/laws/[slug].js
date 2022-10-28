@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import  Router  from "next/router";
+import Router from "next/router";
 import fs from "fs";
 import path from "path";
 import { MDXRemote } from "next-mdx-remote";
@@ -28,10 +28,14 @@ const slugPage = ({ serializedContent, slug }) => {
         </div>
         <h2 className={styles.title}>{frontmatter.title}</h2>
       </div>
-      <MDXRemote {...serializedContent} />
-      <button onClick={() => Router.back()} className={styles.back}>
-        <span>←</span>Back
-      </button>
+      <div className={styles.content}>
+        <div className={styles.mdxContainer}>
+          <MDXRemote {...serializedContent} />
+          <button onClick={() => Router.back()} className={styles.back}>
+            <span>←</span>Back
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
