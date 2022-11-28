@@ -27,7 +27,7 @@ const Hero = () => {
             laws.
           </p>
           <div className={styles.btnContainer}>
-            <Button href='/about' text='All Laws' title='All Laws' />
+            <Button href='/laws' text='All Laws' title='All Laws' />
             <Button
               href={`/laws/law${random}`}
               color='secondary'
